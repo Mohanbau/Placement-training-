@@ -1,0 +1,95 @@
+1.palindrome
+
+def is_palindrome(s):
+    return s == s[::-1]
+s = input()
+if is_palindrome(s):
+    print(f"{s} is a palindrome.")
+else:
+    print(f"{s} is not a palindrome.")
+
+
+2.swap two numbers:
+
+x = input()
+y = input()
+temp = x
+x = y
+y = temp
+
+print('The value of x after swapping: {}'.format(x))
+print('The value of y after swapping: {}'.format(y))
+
+
+3.leap year
+
+year = int(input("Enter the number: ")
+
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
+
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+
+else:
+    print("{0} is not a leap year".format(year))
+
+
+ 4.sum of natural numbers:
+
+num = 16
+
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("The sum is", sum)
+
+
+   5.LCM
+
+   def compute_lcm(x, y):
+
+   if x > y:
+       greater = x
+   else:
+       greater = y
+
+   while(True):
+       if((greater % x == 0) and (greater % y == 0)):
+           lcm = greater
+           break
+       greater += 1
+
+   return lcm
+
+num1 = int(input()
+num2 = int(input()
+
+print("The L.C.M. is", compute_lcm(num1, num2))
+
+
+6.Fibonacci sequence:
+
+n = int(input("How many terms? "))
+
+n1, n2 = 0, 1
+count = 0
+if n <= 0:
+   print("Please enter a positive integer")
+
+elif n == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < n:
+       print(n1)
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1
