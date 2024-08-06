@@ -1,0 +1,21 @@
+1.Happy number 
+
+def isHappy(n):    
+    r = s = 0;    
+          
+    while(n > 0):    
+        r = n%10;    
+        s = s + (r*r);    
+        n = n//10;    
+    return s;    
+        
+n = 82;    
+re = n;    
+     
+while(re != 1 and re!= 4):    
+    re = isHappy(re);    
+         
+if(re == 1):    
+    print(str(n) + " is a happy number");       
+elif(result == 4):    
+    print(str(n) + " is not a happy number"); 
